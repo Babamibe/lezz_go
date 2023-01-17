@@ -1,0 +1,44 @@
+.bloc__modal {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    height: 400px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+
+  .bloc__modal--titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal__titre--h5 {
+    color: #842015;
+  }
+
+  .bloc__modal--input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal__input {
+    border: none;
+    background-color: #E8EEFC;
+    border-radius: 10px;
+    margin: 10px;
+    height: 30px;
+    width: 80%;
+  }
+
+  .bloc__modal--bloc {
+    display: flex;
+    justify-content: center;
+  }
+
+

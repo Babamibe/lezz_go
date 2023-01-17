@@ -1,0 +1,47 @@
+.sidenav {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+    width: 300px;
+    box-shadow: 3px 0px 5px -2px #8E7C8E;
+  }
+
+  .sidenav__avatar{
+    display: inline-block; 
+    position: relative; 
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden; 
+    border-radius: 50%;
+  }
+
+  
+
+  .sidenav__avatar--img {
+    width: auto; 
+    height: 100%; 
+  }
+
+  .portrait {
+    width: 100%; 
+    height: auto;
+  }
+
+  .sidenav__username {
+    color: #001F62;
+  }
+
+  .sidenav__userinfo--lastname,
+  .sidenav__userinfo--firstname,
+  .sidenav__userinfo--email {
+    margin: 20px;
+    font-weight:500;
+  }
+
+  .sidenav__logo img {
+    margin-top: 100px;
+    width: 150px;
+  }
