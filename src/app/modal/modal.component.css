@@ -1,5 +1,5 @@
 .bloc__modal {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 20px 0;
     height: 400px;

@@ -6,17 +6,24 @@
     src="../assets/LezzGo_full_logo_dropShadow.svg"
     />
       <div class="spacer"></div>
-      <a  routerLink="/dashboard" class="nav__link" title="Tableau de bord">
+      <a *ngIf="loggedIn"  routerLink="/dashboard" class="nav__link" title="Tableau de bord">
         <span class="nav">Tableau de bord</span>
       </a>
-      <a routerLink="/project" class="nav__link" title="Projet">
+      <a *ngIf="loggedIn" routerLink="/project" class="nav__link" title="Projet">
         <span class="nav">Projet en cours</span>
       </a>
-      <a routerLink="/profile" class="nav__link" title="Profil">
+      <a *ngIf="loggedIn" routerLink="/profile" class="nav__link" title="Profil">
         <span class="nav">Profil</span>
       </a>      
-      <a routerLink="/login" aria-label="Login Button" class="nav__link" title="Connexion">
+      <a *ngIf="loggedIn" routerLink="/login" class="nav__link" title="Déconnexion">
+        <span class="nav">Déconnexion</span>
+      </a>      
+      <button
+      *ngIf="!loggedIn" 
+      (click)="openModal()" 
+      class="nav__link">
         <span class="nav">Connexion</span>
-      </a>
+      
+      </button>
       
   </div>
