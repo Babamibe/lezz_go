@@ -1,5 +1,5 @@
-<!-- Toolbar -->
-<div class="navbar" role="banner">
+<!-- Navbar -->
+<!-- <div class="navbar" role="banner">
     <img
     width="80"
     alt="LezzGo Logo"
@@ -26,4 +26,24 @@
       
       </button>
       
-  </div>
+  </div> -->
+
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" routerLink="/">
+      <img alt="LezzGo Logo" src="../assets/LezzGo_full_logo_dropShadow.svg" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div *ngIf="loggedIn" class="navbar-nav">
+        <a class="nav-item nav-link active nav__link" routerLink="/dashboard" title="Tableau de bord">Tableau de bord <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link nav__link" routerLink="/projects" title="Projet">Projets</a>
+        <button class="nav-item nav-link nav__link" routerLink="/login" title="Déconnexion">Déconnexion</button>
+      </div>
+      <div *ngIf="!loggedIn" class="navbar-nav">
+        <button class="nav-item nav-link nav__link" routerLink="/dashboard" title="Connexion">Connexion</button>
+      </div>
+    </div>
+  </nav>

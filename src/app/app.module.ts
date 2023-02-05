@@ -14,7 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { MyCalendarModule } from './calendar.module';
 import { DashboardHomeComponent } from './layout/dashboard/dashboard-home/dashboard-home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DashboardProjectsComponent } from './layout/dashboard/dashboard-projects/dashboard-projects.component';
+import { ProjectsComponent } from './layout/projects/projects.component';
+import { ProjectComponent } from './layout/projects/project/project.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { DashboardProjectsComponent } from './layout/dashboard/dashboard-project
     LandingPageComponent,
     DashboardComponent,
     DashboardHomeComponent,
-    DashboardProjectsComponent
+    ProjectsComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { DashboardProjectsComponent } from './layout/dashboard/dashboard-project
     HttpClientModule,
     FormsModule,
     MyCalendarModule,
-    NgbModule
+    NgbModule,
+    SearchBarComponent
   ],
   exports:[],
   providers: [],
