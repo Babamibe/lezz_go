@@ -12,6 +12,9 @@ import { ProjectBoxComponent } from './project-box/project-box.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { MyCalendarModule } from './calendar.module';
+import { DashboardHomeComponent } from './layout/dashboard/dashboard-home/dashboard-home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DashboardProjectsComponent } from './layout/dashboard/dashboard-projects/dashboard-projects.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +25,17 @@ import { MyCalendarModule } from './calendar.module';
     ModalComponent,
     ProjectBoxComponent,
     LandingPageComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardHomeComponent,
+    DashboardProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    MyCalendarModule
+    MyCalendarModule,
+    NgbModule
   ],
   exports:[],
   providers: [],
