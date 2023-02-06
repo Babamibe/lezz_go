@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -9,10 +11,32 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'lezz_go';
 
+  activePath: string = '';
+  activeClassName: string = '';
+
+  constructor(private http: HttpClient,private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activePath = event.url.split('/')[1] || 'default';
+        this.activeClassName = this.activePath + 'PageClass';
+        console.log(this.activeClassName);
+      }
+    });
+  }
+
+
+
+
+
+
+
+
+
+
+
   ngOnInit() {
     this.fetchProducts();
   }
-  constructor(private http: HttpClient) {}
 
   onFetchProducts() {
     this.fetchProducts();

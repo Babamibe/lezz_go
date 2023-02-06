@@ -11,12 +11,14 @@ import { LandingPageComponent } from './layout/landing-page/landing-page.compone
 import { ProjectBoxComponent } from './project-box/project-box.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
-import { MyCalendarModule } from './calendar.module';
 import { DashboardHomeComponent } from './layout/dashboard/dashboard-home/dashboard-home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectsComponent } from './layout/projects/projects.component';
 import { ProjectComponent } from './layout/projects/project/project.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { PopupComponent } from './popup/popup.component';
+import { FriendsComponent } from './layout/friends/friends.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,15 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     DashboardHomeComponent,
     ProjectsComponent,
     ProjectComponent,
+    PopupComponent,
+    FriendsComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    MyCalendarModule,
     NgbModule,
     SearchBarComponent
   ],

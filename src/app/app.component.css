@@ -20,7 +20,22 @@
     display: flex;
   }
 
+.projectsPageClass{
+  background-image: url("../assets/background-img.jpg");
 
+}
+.dashboardPageClass{
+  background-image: url("../assets/LezzGo_projects_bg.jpg");
+}
+
+.friendsPageClass {
+  background-image: url("../assets/LezzGo_friends2_bg.jpg");
+}
+.projectsPageClass, .dashboardPageClass, .projectPageClass, .friendsPageClass {
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
 
 
   h1,
@@ -122,6 +137,7 @@
   display: block;
   margin: 0 auto;
 }
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {

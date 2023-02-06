@@ -1,11 +1,11 @@
 .bloc__modal {
-    display: none;
+    display: flex;
     flex-direction: column;
     margin: 20px 0;
     height: 400px;
     width: 300px;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 20px;
     background-color: #fff;
     justify-content: space-between;
@@ -17,8 +17,15 @@
     align-items: center;
   }
 
+  .modal__titre--h2 {
+    color: #000;
+    font-size: 30px;
+
+  }
+
   .modal__titre--h5 {
     color: #842015;
+    text-decoration: none;
   }
 
   .bloc__modal--input {

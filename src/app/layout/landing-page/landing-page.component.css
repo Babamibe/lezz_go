@@ -1,3 +1,13 @@
+:host(app-landingpage) {
+    display: flex;
+    justify-content: center;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+}
+
 .bg {
     /* Set rules to fill background */
     min-height: 100%;
@@ -9,7 +19,7 @@
       
     /* Set up positioning */
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     z-index: -5;
   }

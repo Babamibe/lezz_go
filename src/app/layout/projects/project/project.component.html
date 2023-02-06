@@ -1,1 +1,56 @@
-<p>project works!</p>
+<div class="container">
+    <div *ngIf="project$ | async as project" class="row mt-5 mb-5">
+        <div class="col text-align-center">
+            <a routerLink="/projects">
+                <img src="../../../../assets/back.svg" alt="">
+            </a>
+            <h2 class="text-center">Projet #{{project.id}}: {{project.name}}</h2>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <span><img src="../../../../assets/LezzGo_calendar_icon.svg" width="40" alt=""></span>
+            <h4>
+                Dates du projet:
+            </h4>
+        </div>
+        <div class="col">
+            <span><img src="../../../../assets/LezzGo_budget_icon.svg" width="40" alt=""></span>
+            <h4>
+                Budget du projet:
+            </h4>
+        </div> 
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <h4 class="mb-2">Participants:</h4>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <h4 class="mb-2">Activités:</h4>
+            <div>
+                <button disabled="disabled"><i class="fa-solid fa-person-hiking"></i></button>
+                <button disabled="disabled"><i class="fa-solid fa-building-columns"></i></button>
+                <button disabled="disabled"><i class="fa-solid fa-spa"></i></button>
+                <button disabled="disabled"><i class="fa-solid fa-utensils"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <h4 class="mb-2">Lieu: </h4>
+            <div class="div">
+                <button disabled="disabled"><i class="fa-solid fa-umbrella-beach"></i></button>
+                <button disabled="disabled"><i class="fa-solid fa-wheat-awn"></i></button>
+                <button disabled="disabled"><i class="fa-solid fa-mountain"></i></button>
+                <button disabled="disabled"><i class="fa-solid fa-city"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col">
+            <h4 class="mb-2">Logement: </h4>
+        </div>
+    </div>
+</div>

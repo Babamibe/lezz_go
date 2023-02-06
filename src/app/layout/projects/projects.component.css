@@ -1,5 +1,9 @@
+:host(app-projects) {
+  background-image: url('../../../assets/LezzGo_cardBg.jpg');
+  background-size: cover;
+}
 h2, h3 {
-    color:#001F62;
+    color:#001F62; 
   }
 
   .nga-card-step {
@@ -8,6 +12,7 @@ h2, h3 {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
+
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);

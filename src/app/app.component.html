@@ -2,13 +2,8 @@
 <app-header></app-header>
 
 
-<main role="main">
+<main class="{{activeClassName}}" role="main">
   <router-outlet></router-outlet>
 </main>
 
 
-<div class="page__layout">
-  <app-project-box></app-project-box>
-</div>
-
-<app-modal></app-modal>
