@@ -1,0 +1,23 @@
+
+<!--Connexion-->
+<div class="blocmodal">
+    <div class="blocmodal--titre">
+      <h2 class="modaltitre--h2">Connexion</h2>
+      <a routerLink="/register" class="modaltitre--h5">
+        Rejoindre
+      </a>
+    </div>
+    <div class="blocmodal--input">
+        <!--<p><em>{{message}}</em></p>-->
+      <form action="">
+        <label for="">Username</label>        
+        <input [(ngModel)]="username" class="modalinput" id="username"  name="username" type="text" required >
+        <label for="">Mot de passe</label>
+        <input [(ngModel)]="password" class="modal__input" id="password"  name="password" type="password" >
+      </form>
+      <a href="reset.html">Mot de passe oublié? </a>
+    </div>
+    <div class="bloc__btn">
+        <button (click)="login()" *ngIf="!auth.isLogged" class="button"  role="button">Connexion</button> 
+    </div>
+</div>
