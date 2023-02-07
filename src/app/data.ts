@@ -1,4 +1,4 @@
-import { Identifiable } from "./search-bar/search-bar.model";
+import { Identifiable } from "./shared/identifiable.model";
 
 export const projects: Identifiable[] = [
 	{ id: 0, name: 'Vacances Paris 2022' },
@@ -15,15 +15,15 @@ export const projects: Identifiable[] = [
 ];
 
 export const friends: Identifiable[] = [
-    { id: 0, name: 'Pat500' },
-    { id: 1, name: 'MarieLo' },
-    { id: 2, name: 'Fionina' },
-    { id: 3, name: 'Lili' },
-    { id: 4, name: 'Jeje96' },
-    { id: 5, name: 'Raphifou' },
-    { id: 6, name: 'Bimbamboum' },
-    { id: 7, name: 'Esthae' },
-    { id: 8, name: 'AlineDesBonsJours' },
-    { id: 9, name: 'Dinonodi' },
-    { id: 10, name: 'Vandv' }
+    { id: 0, name: 'Pat500', avatar:'../../../assets/LezzGo_avatar1.svg' },
+    { id: 1, name: 'MarieLo', avatar:'../../../assets/LezzGo_avatar3.svg'},
+    { id: 2, name: 'Fionina', avatar:'../../../assets/LezzGo_avatar2.svg' },
+    { id: 3, name: 'Lili' , avatar:'../../../assets/LezzGo_avatar4.svg'},
+    { id: 4, name: 'Jeje96' , avatar:'../../../assets/LezzGo_avatar5.svg'},
+    { id: 5, name: 'Raphifou', avatar:'../../../assets/LezzGo_avatar6.svg' },
+    { id: 6, name: 'Bimbamboum', avatar:'../../../assets/LezzGo_avatar7.svg' },
+    { id: 7, name: 'Esthae' , avatar:'../../../assets/LezzGo_avatar8.svg'},
+    { id: 8, name: 'AlineDesBonsJours', avatar:'../../../assets/LezzGo_avatar3.svg' },
+    { id: 9, name: 'Dinonodi', avatar:'../../../assets/LezzGo_avatar5.svg' },
+    { id: 10, name: 'Vandv', avatar:'../../../assets/LezzGo_avatar1.svg' }
   ];

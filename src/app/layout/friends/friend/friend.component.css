@@ -1,0 +1,51 @@
+.friend__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.friend__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    background-color: rgba(225,225,225,.75);
+    min-height: 100vh;
+  }
+
+  h2, h3 {
+    color:#001F62; 
+  }
+
+  .nga-card-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    height: 160px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+  }
+
+  .nga-card-step:hover {
+    border: 1px solid #99ccff;
+    color: #0d6efd;
+    box-shadow: #00000026 0 15px 25px, #FFCA6C 0 5px 10px;
+    transition: box-shadow .3s ease-in-out;
+  }
+
+  .nga-card-step i {
+    color: #FF8975;
+  }
+
+  .nga-card-step a {
+    text-decoration: none;
+    color: #014590;
+  }

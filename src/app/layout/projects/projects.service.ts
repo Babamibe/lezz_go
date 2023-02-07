@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 
 
 import { projects } from '../../data';
-import { Identifiable } from 'src/app/search-bar/search-bar.model';
+import { Identifiable } from 'src/app/shared/identifiable.model';
 
 @Injectable({
   providedIn: 'root',

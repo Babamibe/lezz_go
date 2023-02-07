@@ -8,8 +8,15 @@
     </div>
     <div class="row mb-4 ">
         <div class="col">
-            <app-popup></app-popup>
-            <span> Créer un projet</span>
+            <app-popup text="Nouveau Projet">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="newProjectInput">Nom du projet</label>
+                        <input type="text" class="form-control" id="newProjectInput" placeholder="Nom du projet">
+                    </div>
+                </form>
+            </app-popup>
+            <span class="h4"> Créer un projet</span>
         </div>
     </div>
     <app-search-bar recherche="projet" [data]="projects"></app-search-bar>
@@ -18,7 +25,7 @@
             <h3>Projets que tu as créés</h3>
         </div>
     </div>
-    <div class="row mb-4 g-4 py-2 row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">        
+    <div class="row mb-4 g-5 py-2 row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">        
         <div *ngFor="let project of projects$| async" [class.selected]="project.id === selectedId" class="col">
             <div class="nga-card-step p-4">
                 <a [routerLink]="['/project', project.id]">
@@ -33,7 +40,7 @@
             <h3>Projets auxquels tu participes</h3>
         </div>
     </div>
-    <div class="row mb-4 g-4 py-2 row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">        
+    <div class="row mb-4 g-5 py-2 row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">        
         <div class="col">
             <div class="nga-card-step p-4">
                 <a href="/projects">
@@ -56,7 +63,7 @@
             <h3>Projets archivés</h3>
         </div>
     </div>
-    <div class="row mb-4 g-4 py-2 row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">        
+    <div class="row mb-4 g-5 py-5 row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">        
         <div class="col">
             <div class="nga-card-step p-4">
                 <a href="/projects">
@@ -66,6 +73,7 @@
             </div>
         </div>
     </div>
+
         
 </div>
 

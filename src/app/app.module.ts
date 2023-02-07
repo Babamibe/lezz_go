@@ -19,6 +19,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PopupComponent } from './popup/popup.component';
 import { FriendsComponent } from './layout/friends/friends.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FriendComponent } from './layout/friends/friend/friend.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PopupComponent,
     FriendsComponent,
     PageNotFoundComponent,
+    FriendComponent,
   ],
   imports: [
     BrowserModule,

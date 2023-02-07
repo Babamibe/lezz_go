@@ -1,0 +1,60 @@
+.container {
+    background-color: rgba(225,225,225,.5);
+  }
+
+ 
+  .col h4 {
+    display: inline-block;
+  }
+
+  .projet__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projet__title img {
+    margin-right: 50px;
+  }
+  .projet__budget, .projet__dates {
+    display: flex;
+    align-items: center;
+  }
+
+  .projet__budget img, .projet__dates img {
+    margin-right: 20px;
+  }
+
+  .project__button {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(225,225,225,.5);
+  }
+
+  .project__button i {
+    color: #001F62;
+  }
+
+  .project__options {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .project__options button {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    margin: 15px;
+    position: fixed;
+    bottom: 50px;
+  }
+
+  #project__options--edit {
+    right: 200px
+  }
+
+  #project__options--delete {
+    right: 130px;
+  }

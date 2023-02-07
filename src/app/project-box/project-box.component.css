@@ -1,5 +1,5 @@
 .project-box {
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: #fff;
     height: 300px;

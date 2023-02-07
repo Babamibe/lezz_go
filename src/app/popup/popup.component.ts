@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -9,11 +9,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class PopupComponent {
   closeResult: string | undefined;
+  @Input() text: string | undefined;
 
 	constructor(private modalService: NgbModal) {}
 
 	openBackDropCustomClass(content: any) {
-		this.modalService.open(content, { backdropClass: 'light-blue-backdrop', centered: true });
+		this.modalService.open(content, {  centered: true, size:'m' });
 	}
 
 }

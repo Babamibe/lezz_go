@@ -21,17 +21,27 @@
   }
 
 .projectsPageClass{
-  background-image: url("../assets/background-img.jpg");
+  background-image: url("../assets/LezzGo_projects3_bg.jpg");
 
 }
-.dashboardPageClass{
+.dashboardPageClass, .defaultPageClass{
   background-image: url("../assets/LezzGo_projects_bg.jpg");
 }
 
 .friendsPageClass {
   background-image: url("../assets/LezzGo_friends2_bg.jpg");
 }
-.projectsPageClass, .dashboardPageClass, .projectPageClass, .friendsPageClass {
+
+.projectPageClass {
+  background-image: url("../assets/LezzGo_project2_bg.jpg");
+}
+
+.friendPageClass {
+  background-image: url("../assets/LezzGo_playa_bg.jpg");
+}
+
+
+.projectsPageClass, .dashboardPageClass, .projectPageClass, .friendsPageClass, .defaultPageClass, .friendPageClass {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -53,6 +63,7 @@
 
   main {
     margin: 0;
+    padding: 20px;
   }
 
   .spacer {

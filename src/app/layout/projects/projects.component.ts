@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs';
 import {projects } from 'src/app/data';
-import { Identifiable } from 'src/app/search-bar/search-bar.model';
+import { Identifiable } from 'src/app/shared/identifiable.model';
 import { ProjectComponent } from './project/project.component';
 import { ProjectService } from './projects.service';
 

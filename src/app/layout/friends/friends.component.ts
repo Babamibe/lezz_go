@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { friends } from 'src/app/data';
-import { Identifiable } from 'src/app/search-bar/search-bar.model';
+import { Identifiable } from 'src/app/shared/identifiable.model';
+import {Observable, switchMap} from 'rxjs'
+import { FriendService } from './friends.service';
+import { ActivatedRoute } from '@angular/router';
 
 
 
@@ -10,8 +13,23 @@ import { Identifiable } from 'src/app/search-bar/search-bar.model';
   styleUrls: ['./friends.component.css']
 })
 
-export class FriendsComponent {
+export class FriendsComponent implements OnInit{
+  friends$!: Observable< Identifiable[]>;
+  selectedId = 0;
+  constructor(
+    private service: FriendService,
+    private route: ActivatedRoute
+  ) {}
 
-  data = friends
+  ngOnInit(): void {
+    this.friends$ = this.route.paramMap.pipe(
+      switchMap(params => {
+        this.selectedId = parseInt(params.get('id')!, 10);
+        return this.service.getFriends();
+      })
+    );
+  }
+
+  friends = friends
 
 }

@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container py-5">
     <div *ngIf="project$ | async as project" class="row mt-5 mb-5">
-        <div class="col text-align-center">
+        <div class="col text-align-center projet__title">
             <a routerLink="/projects">
                 <img src="../../../../assets/back.svg" alt="">
             </a>
@@ -8,13 +8,13 @@
         </div>
     </div>
     <div class="row mb-4">
-        <div class="col">
+        <div class="col projet__dates">
             <span><img src="../../../../assets/LezzGo_calendar_icon.svg" width="40" alt=""></span>
             <h4>
                 Dates du projet:
             </h4>
         </div>
-        <div class="col">
+        <div class="col projet__budget">
             <span><img src="../../../../assets/LezzGo_budget_icon.svg" width="40" alt=""></span>
             <h4>
                 Budget du projet:
@@ -30,27 +30,39 @@
         <div class="col">
             <h4 class="mb-2">Activités:</h4>
             <div>
-                <button disabled="disabled"><i class="fa-solid fa-person-hiking"></i></button>
-                <button disabled="disabled"><i class="fa-solid fa-building-columns"></i></button>
-                <button disabled="disabled"><i class="fa-solid fa-spa"></i></button>
-                <button disabled="disabled"><i class="fa-solid fa-utensils"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-person-hiking"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-building-columns"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-spa"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-utensils"></i></button>
             </div>
         </div>
     </div>
     <div class="row mb-4">
         <div class="col">
-            <h4 class="mb-2">Lieu: </h4>
+            <h4 class="mb-2">Destination: </h4>
             <div class="div">
-                <button disabled="disabled"><i class="fa-solid fa-umbrella-beach"></i></button>
-                <button disabled="disabled"><i class="fa-solid fa-wheat-awn"></i></button>
-                <button disabled="disabled"><i class="fa-solid fa-mountain"></i></button>
-                <button disabled="disabled"><i class="fa-solid fa-city"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-umbrella-beach"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-wheat-awn"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-mountain"></i></button>
+                <button class="project__button" disabled="disabled"><i class="fa-solid fa-3x fa-city"></i></button>
             </div>
         </div>
     </div>
-    <div class="row mb-4">
+    <div class="row mb-2">
         <div class="col">
             <h4 class="mb-2">Logement: </h4>
+        </div>
+    </div>
+    <div class="row mb-4 g-5 py-5  text-center">        
+        <div class="col">
+            <div class="nga-card-step p-4 project__options">
+                <button id="project__options--edit">
+                    <img src="../../../assets/LezzGo_edit_button.svg" alt="" width="60">
+                </button>
+                <button id="project__options--delete">
+                    <img src="../../../assets/LezzGo_delete_button.svg" alt="" width="60">
+                </button>
+            </div>
         </div>
     </div>
 </div>

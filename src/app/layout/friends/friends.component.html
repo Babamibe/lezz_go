@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row mb-4">
+    <div class="row mb-5">
         <div class="col-md-12 mb-5 mt-5">
             <h2 class="text-center">
                 Amis
@@ -8,21 +8,34 @@
     </div>
     <div class="row mb-4 ">
         <div class="col">
-            <app-popup></app-popup>
-            <span> Ajouter un ami</span>
+            <app-popup text="Nouvel ami">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="newProjectInput">Email de l'ami</label>
+                        <input type="text" class="form-control" id="newProjectInput" placeholder="email ">
+                    </div>
+                </form>
+            </app-popup>
+            <span class="h4"> Ajouter un ami</span>
         </div>
     </div>
-    <app-search-bar recherche="ami" [data]="data"></app-search-bar>
+    <div class="row mb-4 ">        
+        <div class="col">
+            <app-search-bar recherche="ami" [data]="friends"></app-search-bar>
+        </div>
+    </div>
+
     <div class="row mb-4">
         <div class="col">
             <h3>Liste d'amis</h3>
         </div>
     </div>
-    <div class="row mb-4 g-4 py-2 row-cols-1 row-cols-md-2 row-cols-lg-6 text-center">        
-        <div *ngFor="let friend of data" class="col">
+    <div class="row mb-4 g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-6 text-center">        
+        <div *ngFor="let friend of friends$| async" [class.selected]="friend.id === selectedId" class="col">
             <div class="nga-card-step p-4">
-                <a routerLink="/friends/{{friend.id}}">
-                    <i class="fa-3x fa-user fa-solid mb-2 nga-text-primary"></i>
+                <a routerLink="/friend/{{friend.id}}">
+                    <img class="mb-2 friends__avatar" src={{friend.avatar}} alt="" >
+                    <!-- <i class="fa-3x fa-user fa-solid mb-2 nga-text-primary"></i> -->
                     <h3 class="h4 nga-text-primary fw-bold">{{friend.name}}</h3>
                 </a>
             </div>

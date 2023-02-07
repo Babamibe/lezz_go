@@ -1,5 +1,4 @@
-<div class="mb-4 row">
-	<label for="typeahead-prevent-manual-entry" class="col-xs-3 col-sm-auto col-form-label">Rechercher un {{recherche}} (au moins 2 caractères):</label>
+<div class="mb-4 row">	
 	<div class="col">
 		<input
 			id="typeahead-prevent-manual-entry"
@@ -10,8 +9,10 @@
 			[inputFormatter]="formatter"
 			[resultFormatter]="formatter"
 			[editable]="false"
+			placeholder="Rechercher un {{recherche}} (au moins 2 caractères)"
 			
 		/>
 	</div>
+	<label for="typeahead-prevent-manual-entry" class="col-xs-3 col-sm-auto col-form-label h4"></label>
 </div>
 <pre>Model: {{ model | json }}</pre>  

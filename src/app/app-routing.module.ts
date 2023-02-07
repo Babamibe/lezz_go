@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { FriendComponent } from './layout/friends/friend/friend.component';
 import { FriendsComponent } from './layout/friends/friends.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { ProjectComponent } from './layout/projects/project/project.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'project/:id', component: ProjectComponent},
   {path: 'signup', component:LandingPageComponent},
   {path: 'friends', component: FriendsComponent},
+  {path:'friend/:id', component:FriendComponent},
   {path:'', redirectTo:'/dashboard', pathMatch:"full"},
   {path: '**', component:PageNotFoundComponent}
 ];
