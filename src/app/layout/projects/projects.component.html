@@ -2,18 +2,19 @@
     <div class="row mb-4">
         <div class="col-md-12 mb-5 mt-5">
             <h2 class="text-center">
-                Projets
+                Mes Projets
             </h2>
         </div>
     </div>
     <div class="row mb-4 ">
         <div class="col">
             <app-popup text="Nouveau Projet">
-                <form action="" method="post">
+                <form #postForm="ngForm" (ngSubmit)="onSave(postForm.value)">
                     <div class="form-group">
-                        <label for="newProjectInput">Nom du projet</label>
-                        <input type="text" class="form-control" id="newProjectInput" placeholder="Nom du projet">
+                        <label for="name">Nom du projet</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nom du projet" name="name" ngModel>                                                
                     </div>
+                    <button class="btn btn-primary" type="submit">Save</button>
                 </form>
             </app-popup>
             <span class="h4"> Créer un projet</span>
@@ -65,12 +66,18 @@
     </div>
     <div class="row mb-4 g-5 py-5 row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">        
         <div class="col">
-            <div class="nga-card-step p-4">
-                <a href="/projects">
-                    <i class="fa-3x fa-compass fa-solid mb-2 nga-text-primary"></i>
-                    <h3 class="h4 nga-text-primary fw-bold">{{projectName}}</h3>
-                </a>
+            <h4 *ngIf="loadedProjects.length < 1 && !isFetching"> Pas de projets archivés</h4>
+            <div  *ngIf="loadedProjects.length >= 1 && !isFetching">
+                <div *ngFor="let proj of loadedProjects" class="col">
+                    <div class="nga-card-step p-4">
+                        <a [routerLink]="['/project', proj.id]">
+                            <i class="fa-3x fa-compass fa-solid mb-2 nga-text-primary"></i>
+                            <h3 class="h4 nga-text-primary fw-bold">{{proj.name}}</h3>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <h5 *ngIf="isFetching">Loading...</h5>
         </div>
     </div>
 

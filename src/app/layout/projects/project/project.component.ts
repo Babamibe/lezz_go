@@ -3,7 +3,7 @@ import { Component, OnInit} from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Observable } from 'rxjs';
 
-import { ProjectService } from '../projects.service';
+import { ProjectService } from '../../../services/projects.service';
 import { Identifiable } from 'src/app/shared/identifiable.model';
 
 @Component({

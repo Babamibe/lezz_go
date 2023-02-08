@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { friends } from 'src/app/data';
 import { Identifiable } from 'src/app/shared/identifiable.model';
 import {Observable, switchMap} from 'rxjs'
-import { FriendService } from './friends.service';
+import { FriendsService } from '../../services/friends.service';
 import { ActivatedRoute } from '@angular/router';
 
 
@@ -17,7 +17,7 @@ export class FriendsComponent implements OnInit{
   friends$!: Observable< Identifiable[]>;
   selectedId = 0;
   constructor(
-    private service: FriendService,
+    private service: FriendsService,
     private route: ActivatedRoute
   ) {}
 

@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 
-import { projects } from '../../data';
+import { projects } from '../data';
 import { Identifiable } from 'src/app/shared/identifiable.model';
 
 @Injectable({

@@ -1,0 +1,8 @@
+
+h2, h3 {
+    color:#001F62; 
+  }
+  .container {
+    background-color: rgba(225,225,225,.75);
+    min-height: 100vh;
+  }

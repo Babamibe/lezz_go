@@ -20,6 +20,8 @@ import { PopupComponent } from './popup/popup.component';
 import { FriendsComponent } from './layout/friends/friends.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FriendComponent } from './layout/friends/friend/friend.component';
+import { ProfileInfoComponent } from './layout/profile-info/profile-info.component';
+import { EditPopupComponent } from './shared/edit-popup/edit-popup.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { FriendComponent } from './layout/friends/friend/friend.component';
     FriendsComponent,
     PageNotFoundComponent,
     FriendComponent,
+    ProfileInfoComponent,
+    EditPopupComponent,
   ],
   imports: [
     BrowserModule,

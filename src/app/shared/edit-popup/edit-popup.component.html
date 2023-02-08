@@ -1,0 +1,19 @@
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title">{{text}}</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<ng-content></ng-content>
+
+	</div>
+	<div class="modal-footer">
+        <app-button input="Save"></app-button>
+        <app-button input="Close" (myClick)="modal.close('Close click')"></app-button>
+		<!-- <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button> -->
+	</div>
+</ng-template>
+
+<button class="btn btn-outline-primary mb-2 me-2 popup__btn" (click)="openBackDropCustomClass(content)">
+	<img width="30" src="../../../assets/LezzGo_edit_button.svg" alt="">
+</button> 

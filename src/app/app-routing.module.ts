@@ -4,6 +4,7 @@ import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { FriendComponent } from './layout/friends/friend/friend.component';
 import { FriendsComponent } from './layout/friends/friends.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
+import { ProfileInfoComponent } from './layout/profile-info/profile-info.component';
 import { ProjectComponent } from './layout/projects/project/project.component';
 import { ProjectsComponent } from './layout/projects/projects.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'signup', component:LandingPageComponent},
   {path: 'friends', component: FriendsComponent},
   {path:'friend/:id', component:FriendComponent},
+  {path:'info', component: ProfileInfoComponent},
   {path:'', redirectTo:'/dashboard', pathMatch:"full"},
   {path: '**', component:PageNotFoundComponent}
 ];

@@ -3,7 +3,7 @@ import { Component, OnInit} from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Observable } from 'rxjs';
 
-import { FriendService } from '../friends.service';
+import { FriendsService } from '../../../services/friends.service';
 import { Identifiable } from 'src/app/shared/identifiable.model';
 import { projects } from 'src/app/data';
 
@@ -20,7 +20,7 @@ export class FriendComponent implements OnInit{
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private service: FriendService,
+    private service: FriendsService,
   ) {}
 
 

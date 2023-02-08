@@ -40,8 +40,12 @@
   background-image: url("../assets/LezzGo_playa_bg.jpg");
 }
 
+.infoPageClass {
+  background-image: url("../assets/LezzGo_roadtrip_bg.jpg");
+}
 
-.projectsPageClass, .dashboardPageClass, .projectPageClass, .friendsPageClass, .defaultPageClass, .friendPageClass {
+
+.projectsPageClass, .dashboardPageClass, .projectPageClass, .friendsPageClass, .defaultPageClass, .friendPageClass, .infoPageClass {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
