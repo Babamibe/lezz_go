@@ -7,14 +7,13 @@
         </div>
     </div>
     <div class="row mb-4">
-        <select title="Select your surfboard" class="selectpicker">
-            <option>Select...</option>
-            <option data-thumbnail="assets/LezzGo_avatar1.svg">Chrome</option>
-            <option data-thumbnail="images/icon-firefox.png">Firefox</option>
-            <option data-thumbnail="images/icon-ie.png">IE</option>
-            <option data-thumbnail="images/icon-opera.png">Opera</option>
-            <option data-thumbnail="images/icon-safari.png">Safari</option>
-          </select>
+        <div *ngFor="let src of avatarSrc, let index=index">
+            <div class="custom-control custom-radio mb-2">
+                <img src="{{src}}" alt="" width="40" style="margin-right: 10px;">
+                <input type="radio" id="customRadio{{index}}" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Choisir cet avatar</label>
+            </div>
+        </div>
     </div>
     <div class="row mb-4">
         <div class="col">
@@ -22,7 +21,7 @@
         </div>
         <div class="col">
             <app-edit-popup></app-edit-popup>
-            <app-edit-popup></app-edit-popup>
+            <app-delete-popup></app-delete-popup>
         </div>
         
     </div>
@@ -32,7 +31,7 @@
         </div>
         <div class="col">
             <app-edit-popup></app-edit-popup>
-            <app-edit-popup></app-edit-popup>
+            <app-delete-popup></app-delete-popup>
         </div>
         
     </div>
@@ -42,7 +41,7 @@
         </div>
         <div class="col">
             <app-edit-popup></app-edit-popup>
-            <app-edit-popup></app-edit-popup>
+            <app-delete-popup></app-delete-popup>
         </div>        
     </div>
     <div class="row mb-4">
@@ -51,7 +50,7 @@
         </div>
         <div class="col">
             <app-edit-popup></app-edit-popup>
-            <app-edit-popup></app-edit-popup>
+            <app-delete-popup></app-delete-popup>
         </div>
         
     </div>

@@ -22,6 +22,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FriendComponent } from './layout/friends/friend/friend.component';
 import { ProfileInfoComponent } from './layout/profile-info/profile-info.component';
 import { EditPopupComponent } from './shared/edit-popup/edit-popup.component';
+import { DeletePopupComponent } from './shared/delete-popup/delete-popup.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { EditPopupComponent } from './shared/edit-popup/edit-popup.component';
     FriendComponent,
     ProfileInfoComponent,
     EditPopupComponent,
+    DeletePopupComponent,
   ],
   imports: [
     BrowserModule,

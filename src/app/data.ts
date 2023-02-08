@@ -27,3 +27,14 @@ export const friends: Identifiable[] = [
     { id: 9, name: 'Dinonodi', avatar:'../../../assets/LezzGo_avatar5.svg' },
     { id: 10, name: 'Vandv', avatar:'../../../assets/LezzGo_avatar1.svg' }
   ];
+
+  export const avatarUrl: string[] = [
+    '../../../assets/LezzGo_avatar1.svg',
+    '../../../assets/LezzGo_avatar2.svg',
+    '../../../assets/LezzGo_avatar3.svg',
+    '../../../assets/LezzGo_avatar4.svg',
+    '../../../assets/LezzGo_avatar5.svg',
+    '../../../assets/LezzGo_avatar6.svg',
+    '../../../assets/LezzGo_avatar7.svg',
+    '../../../assets/LezzGo_avatar8.svg'
+  ]
